@@ -1,22 +1,28 @@
 ## 🫒 My Solution — Product Performance View
 
-As part of the LinkedIn Learning course *"Introduction to Analytics Engineering"*,
-I completed the first challenge: building a Snowflake view (`product_perf`) that
-aggregates product sales for a mock company, **Two Trees Olive Oil**.
+As part of the LinkedIn Learning course "Introduction to Analytics Engineering",
+I completed the first challenge: building a Snowflake view (product_perf) that
+aggregates product sales for a mock company, Two Trees Olive Oil.
 
-**What the view does:**
-- Joins the `products` and `orders` tables
-- Calculates `total_product_sold` (units sold) using `SUM(quantity)`
-- Calculates `total_product_orders` (distinct orders) using `COUNT(DISTINCT order_id)`
+What the view does:
+- Joins the products and orders tables
+- Calculates total_product_sold (units sold) using SUM(quantity)
+- Calculates total_product_orders (distinct orders) using COUNT(DISTINCT order_id)
 - Groups results by product to produce a clean, analyst-friendly table
 
-📄 [View my solution](./first-challenge/first-challenge-my-solution.sql)
+View my solution: first-challenge/first-challenge-my-solution.sql
 
-**Skills practiced:**
-- SQL `JOIN`s across tables with mismatched column names
-- Aggregate functions (`SUM`, `COUNT DISTINCT`)
-- `GROUP BY` rules for aggregated queries
+Skills practiced:
+- SQL JOINs across tables with mismatched column names
+- Aggregate functions (SUM, COUNT DISTINCT)
+- GROUP BY rules for aggregated queries
 - Writing clean, well-named views for downstream BI tools (e.g. Looker)
+
+I also completed the second challenge, adding a total_states column to
+track how many states each product was shipped to, done through a proper
+branch and pull request. The third challenge is documentation for the
+view, explaining its purpose, columns, and the changes made along the way.
+You can find it in third-challenge/documentation.md.
 
 
 # Introduction to Analytics Engineering
